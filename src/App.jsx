@@ -1,32 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
 import './App.css'
+import { Button } from '@mui/material/';
+import { useSnackbar } from 'notistack';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { yellow, red } from '@mui/material/colors';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const yellowButtons = createTheme({
+    palette: {
+      primary: {
+        main: yellow[500], // main is the default value 
+        dark: red[500] // dark seems to be basically the hover value in dark mode
+      }
+    }
+  })
+  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+
+  const snackBarDemo = () => {
+    enqueueSnackbar("Im real cool!", {
+      variant: 'success',
+      autoHideDuration: 2500
+    })
+  }
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Hello World!</h1>
+      <ThemeProvider theme={yellowButtons}>
+        <Button onClick={() => { snackBarDemo() }} variant="contained">Click me 😊</Button>
+      </ThemeProvider>
     </div>
   )
 }

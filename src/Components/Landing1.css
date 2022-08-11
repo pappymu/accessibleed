@@ -38,20 +38,50 @@ border: 1px solid rgba(243, 243, 243, 0.3);
     display: flex;
     flex-direction: column;
     margin-top: 3vh;
+    width: 100%;
 }
 
 .buttonPaperStyle {
-    padding: 1vw;
+    width: 90%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px !important;
-    background: rgba(243, 243, 243, 0.59) !important;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.3) !important;
+    transition: .3s;
+}
+
+.buttonPaperStyle:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.5) !important;
+    opacity: .8;
+}
+
+.buttonPaperStyle.variant1 {
+    background: rgb(185,43,39);
+    background: linear-gradient(45deg, rgba(185,43,39,1) 0%, rgba(21,101,192,1) 100%);
+    border: 1px solid rgba(0, 94, 169, 0.3);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+
+.buttonPaperStyle.variant2 {
+    /* From https://css.glass */
+    background: rgb(0,242,96);
+    background: linear-gradient(45deg, rgba(0,242,96,1) 0%, rgba(5,117,230,1) 100%);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 }
 
 .buttonsInnerDiv {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .ImageStyle {
@@ -61,4 +91,10 @@ border: 1px solid rgba(243, 243, 243, 0.3);
 .iconStyle {
     margin-bottom: 1vh;
     font-size: 2vw;
+}
+
+.iconTextStyle {
+    font-weight: 600;
+    font-size: 3ch;
+    color:rgb(247, 247, 247);
 }

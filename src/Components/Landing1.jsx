@@ -37,21 +37,21 @@ const LandingOne = () => {
 
 
                         <div>
-                            <h2>I am</h2>
+                            <h2>I am a:</h2>
                         </div>
 
                         <div className="buttonsInnerDiv">
-                            <Paper elevation={12} className="buttonPaperStyle" style={{ marginRight: "1.5vw" }}>
+                            <div elevation={12} className="buttonPaperStyle variant1" style={{ marginRight: "1.5vw"}}>
                                 <span className="iconStyle">👨‍🎓</span>
-                                <Button onClick={() => { snackBarDemo() }} variant="contained" size="large">A Tutee</Button>
-                            </Paper>
+                                <span className="iconTextStyle">Tutee</span>
+                            </div>
  
                             <Divider orientation="vertical" style={{ borderRightWidth: "3px" }} />
 
-                            <Paper elevation={12} className="buttonPaperStyle" style={{ marginLeft: "1.5vw" }}>
+                            <div elevation={12} className="buttonPaperStyle variant2" style={{ marginLeft: "1.5vw" }}>
                                 <span className="iconStyle">👩‍🏫</span>
-                                <Button onClick={() => { snackBarDemo() }} variant="contained" size="large">A Tutor</Button>
-                            </Paper>
+                                <span className="iconTextStyle">Tutor</span>
+                            </div>
                         </div>
 
                     </div>

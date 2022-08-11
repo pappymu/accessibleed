@@ -1,0 +1,64 @@
+.Landing1 {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Landing1Col {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3ch;
+    margin-right: 5ch;
+}
+
+.rightColStyle {
+    width: 85%;
+    text-align: center;
+    height: 90%;
+    padding: 5ch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+/* From https://css.glass */
+background: rgba(243, 243, 243, 0.59);
+border-radius: 16px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+backdrop-filter: blur(16.5px);
+-webkit-backdrop-filter: blur(16.5px);
+border: 1px solid rgba(243, 243, 243, 0.3);
+}
+
+.buttonsDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+.buttonPaperStyle {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px !important;
+    background: rgba(243, 243, 243, 0.59) !important;
+}
+
+.buttonsInnerDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ImageStyle {
+    width: 90%;
+}
+
+.iconStyle {
+    margin-bottom: 1vh;
+    font-size: 2vw;
+}

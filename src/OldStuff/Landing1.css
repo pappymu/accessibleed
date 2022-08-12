@@ -70,6 +70,7 @@ border: 1px solid rgba(243, 243, 243, 0.35);
     cursor: pointer;
     box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.3) !important;
     transition: .3s;
+    text-align: center;
 }
 
 .buttonPaperStyle:hover {
@@ -96,8 +97,9 @@ backdrop-filter: blur(5px);
 
 .buttonsInnerDiv {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: space-around;
+    margin-top: 5vh;
 }
 
 .ImageStyle {
@@ -106,7 +108,7 @@ backdrop-filter: blur(5px);
 
 .iconStyle {
     margin-bottom: 1vh;
-    font-size: 2vw;
+    font-size: 3ch;
 }
 
 .iconTextStyle {

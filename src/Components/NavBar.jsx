@@ -32,7 +32,7 @@ const NavBar = () => {
 
 
     return (
-        <AppBar position="fixed" sx={{ overflowX: 'hidden', height: '7%', width: '100vw' }}>
+        <AppBar position="fixed" sx={{ overflowX: 'hidden',  width: '100vw' }}>
             <Container>
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

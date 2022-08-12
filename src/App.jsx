@@ -1,6 +1,5 @@
 
 import './App.css'
-import LandingOne from './Components/Landing1';
 import LandingTwo from './Components/Landing2';
 import NavBar from './Components/NavBar'
 

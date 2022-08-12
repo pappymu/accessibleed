@@ -9,7 +9,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { useState } from 'React';
+import { useState } from 'react';
 
 const pages = ['Home', 'What We Offer', 'Who We Work With', 'FAQ'];
 
@@ -32,7 +32,7 @@ const NavBar = () => {
 
 
     return (
-        <AppBar position="fixed" sx={{ overflowX: 'hidden', width: '100vw' }}>
+        <AppBar position="fixed" sx={{ overflowX: 'hidden', height: '7%', width: '100vw' }}>
             <Container>
                 <Toolbar disableGutters>
                     <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -50,7 +50,7 @@ const NavBar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        TuitionGoWhere
+                        AccessibleEducation
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -105,7 +105,7 @@ const NavBar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        TuitionGoWhere
+                        AccessibleEducation
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (

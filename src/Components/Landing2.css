@@ -1,0 +1,32 @@
+.Landing2 {
+    height: calc(100vh - 64px);
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+}
+
+.Landing2::before {
+    content: "";
+    left: 0;
+    right: 0;
+    padding-top: 2px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url("./../assets/graduate.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glass {
+    /* From https://css.glass */
+    background: rgba(243, 243, 243, 0.35);
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(243, 243, 243, 0.35);
+}

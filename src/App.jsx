@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <NavBar />
 
-      <div style={{marginTop: "7.2vh"}}>
+      <div style={{marginTop: "64px"}}>
         <LandingOne />
 
         <LandingOne />

@@ -31,14 +31,14 @@
     height: fit-content;
     color: white;
     margin-left: 2em;
-    margin-top: 15%;
-    padding-bottom: 1em;
-    background: rgba(90, 90, 90, 0.42);
+    margin-top: 15vh;
+    padding: 1.5em;
+    background: rgba(26, 26, 26, 0.42);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
-    border: 1px solid rgba(90, 90, 90, 0.3);
+    border: 1px solid rgba(26, 26, 26, 0.42);
 }
 
 .glass h1 {
@@ -52,7 +52,7 @@
 .buttonPaperStyle {
     width: 90%;
     max-width: 25ch;
-    padding: 1ch;
+    padding: 1.2ch;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +78,7 @@
     justify-content: left;
     margin-top: 4vh;
     margin-left: 2%;
+    margin-bottom: 2vh;
 }
 
 .buttonPaperStyle.variant1 {
@@ -88,6 +89,10 @@
 }
 
 .buttonPaperStyle.variant2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid white;
     backdrop-filter: blur(5px);
@@ -102,6 +107,6 @@
 
 .iconTextStyle2 {
     font-weight: 600;
-    font-size: 2.5ch;
+    font-size: 2.3ch;
     color:rgb(255, 255, 255);
 }

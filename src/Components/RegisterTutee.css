@@ -1,0 +1,38 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main::before {
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 150%;
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/mainBG2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.registerGlass {
+    /* From https://css.glass */
+        height: fit-content;
+        color: white;
+        margin-left: 2em;
+        margin-top: 15vh;
+        padding: 1.5em;
+        background: rgba(26, 26, 26, 0.42);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.5px);
+        -webkit-backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(26, 26, 26, 0.42);
+    }

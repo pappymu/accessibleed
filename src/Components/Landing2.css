@@ -17,19 +17,36 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    background-image: url("./../assets/graduate.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/mainBG2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
 }
+
 
 .glass {
 /* From https://css.glass */
-background: rgba(197, 197, 197, 0.42);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.5px);
--webkit-backdrop-filter: blur(4.5px);
-border: 1px solid rgba(197, 197, 197, 0.3);
+    height: fit-content;
+    color: white;
+    margin-left: 2em;
+    margin-top: 15%;
+    padding-bottom: 1em;
+    background: rgba(90, 90, 90, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(90, 90, 90, 0.3);
+}
+
+.glass h1 {
+    margin-left: 3%;
+}
+
+.glass p {
+    margin-left: 3%;
 }
 
 .buttonPaperStyle {
@@ -57,33 +74,34 @@ border: 1px solid rgba(197, 197, 197, 0.3);
     display: flex;
     width: 100%;
     height: fit-content;
-    justify-content: space-around;
-    margin-top: 5vh;
+
+    justify-content: left;
+    margin-top: 4vh;
+    margin-left: 2%;
 }
 
 .buttonPaperStyle.variant1 {
-    background: rgb(33,147,176);
-    background: linear-gradient(45deg, rgba(33,147,176,1) 0%, rgba(109,213,237,1) 100%);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+    background: linear-gradient(45deg, rgb(25, 118, 210) 0%, rgb(22, 164, 196) 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .buttonPaperStyle.variant2 {
-    background: rgb(0,180,219);
-    background: linear-gradient(45deg, rgba(0,180,219,1) 0%, rgba(0,131,176,1) 100%);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-}
-
-.iconStyle {
-    margin-bottom: 1vh;
-    font-size: 2.5ch;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .iconTextStyle {
     font-weight: 600;
-    font-size: 3ch;
+    font-size: 2.5ch;
     color:rgb(247, 247, 247);
+}
+
+.iconTextStyle2 {
+    font-weight: 600;
+    font-size: 2.5ch;
+    color:rgb(255, 255, 255);
 }

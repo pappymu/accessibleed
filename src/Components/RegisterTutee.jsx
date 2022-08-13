@@ -55,7 +55,7 @@ const Register = (props) => {
                         <Button variant="contained" startIcon={<KeyboardArrowLeftIcon />} onClick={() => {props.setPage("Home")}}>Home</Button>
                         <Stack sx={{ maxWidth: "20ch" }}>
                             <Button variant="contained" sx={{mb: "5px"}} endIcon={<KeyboardArrowRightIcon />}>Tutor Signup</Button>
-                            <span style={{ fontSize: "small" }}>Looking to volunteer as a tutor?</span>
+                            <span style={{ fontSize: "small" }}>Looking to tutor instead?</span>
                         </Stack>
 
                     </Stack>
@@ -116,7 +116,7 @@ const Register = (props) => {
                             }
                         />
 
-                        <Divider textAlign="left" variant="fullWidth" className="formItemStyle">Tutee Information</Divider>
+                        <Divider textAlign="left" variant="fullWidth" className="formItemStyle">Your Information</Divider>
 
                         <Controller
                             name="location"
@@ -129,8 +129,8 @@ const Register = (props) => {
                             }) => {
                                 return (
                                     <Fragment>
-                                        <span className='itemTitleText'>📌 Location of Tutee</span>
-                                        <TextField {...field} className="formItemStyle" variant='filled' label="Location" required />
+                                        <span className='itemTitleText'>📌 Location </span>
+                                        <TextField {...field} className="formItemStyle" variant='filled' label="Address, postal code" required />
                                     </Fragment>
 
                                 )
@@ -145,7 +145,7 @@ const Register = (props) => {
                             rules={{ required: "Please select a tuition type" }}
                             render={({ field }) =>
                                 <Fragment>
-                                    <span className='itemTitleText'>💻 Tuition Type (Online/Physical)</span>
+                                    <span className='itemTitleText'>💻 Tuition Type </span>
                                     <Select
                                         label="Tuition Type"
                                         variant="filled"
@@ -153,8 +153,8 @@ const Register = (props) => {
                                         className='formItemStyle'
                                         {...field}
                                     >
-                                        <MenuItem value='Online'>Online Tuition</MenuItem>
-                                        <MenuItem value='Physical'>Physical Tuition</MenuItem>
+                                        <MenuItem value='Online'>Online</MenuItem>
+                                        <MenuItem value='Physical'>Physical</MenuItem>
                                     </Select>
 
                                 </Fragment>

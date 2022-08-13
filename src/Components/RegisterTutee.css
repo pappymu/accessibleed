@@ -32,12 +32,12 @@
         margin-top: 15vh;
         margin-bottom: 15vh;
         padding: 1.5em;
-        background: rgba(26, 26, 26, 0.42);
+        background: rgba(10, 10, 10, 0.7);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.5px);
         -webkit-backdrop-filter: blur(4.5px);
-        border: 1px solid rgba(26, 26, 26, 0.42);
+        border: 1px solid rgba(10, 10, 10, 0.7);
         min-width: 30vw;
         max-width: 50ch;
 }

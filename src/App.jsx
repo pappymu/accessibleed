@@ -24,7 +24,7 @@ function App() {
         </Fragment>
       )}
       {page === "Register" && (
-        <Register />
+        <Register setPage={setPage}/>
       )}
 
     </div>

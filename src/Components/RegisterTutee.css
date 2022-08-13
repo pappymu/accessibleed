@@ -1,6 +1,7 @@
 .main {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
+    overflow-y: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,8 +11,9 @@
     content: "";
     left: 0;
     right: 0;
+    top: -3px;
     z-index: -1;
-    height: 150%;
+    height: 105%;
     width: 100%;
     position: fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/mainBG2.jpg");
@@ -28,6 +30,7 @@
         color: white;
         margin-left: 2em;
         margin-top: 15vh;
+        margin-bottom: 15vh;
         padding: 1.5em;
         background: rgba(26, 26, 26, 0.42);
         border-radius: 16px;
@@ -35,4 +38,23 @@
         backdrop-filter: blur(4.5px);
         -webkit-backdrop-filter: blur(4.5px);
         border: 1px solid rgba(26, 26, 26, 0.42);
-    }
+        min-width: 30vw;
+        max-width: 50ch;
+}
+
+.formStyles {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.itemTitleText {
+    margin-top: 0.5ch;
+    margin-bottom: 0.5ch;
+    font-weight: 600;
+    color: #64b5f6;
+}
+
+.formItemStyle {
+    margin-bottom: 2ch !important;
+}

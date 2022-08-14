@@ -38,7 +38,7 @@ const generateSubjects = () => {
 
 }
 
-const Register = (props) => {
+const RegisterTutor = (props) => {
 
     useEffect(() => {
         generateLevels()
@@ -49,7 +49,6 @@ const Register = (props) => {
     const onSubmit = data => console.log(data);
     const navigate = useNavigate()
 
-
     return (
         <Fade in={true}>
             <Box className="main">
@@ -58,17 +57,15 @@ const Register = (props) => {
                         <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
                             <Button variant="contained" startIcon={<KeyboardArrowLeftIcon />} onClick={() => { navigate('/') }}>Home</Button>
                             <Stack sx={{ maxWidth: "20ch" }}>
-                                <Button variant="contained" sx={{ mb: "5px" }} endIcon={<KeyboardArrowRightIcon />} onClick={() => {
-                                    navigate('/register/tutor')
-                                }}>Tutor Signup</Button>
-                                <span style={{ fontSize: "small" }}>Looking to tutor instead?</span>
+                                <Button variant="contained" sx={{ mb: "5px" }} endIcon={<KeyboardArrowRightIcon />} onClick={() => { navigate('/register/tutee') }}>Tutee Signup</Button>
+                                <span style={{ fontSize: "small" }}>Looking for a tutor instead?</span>
                             </Stack>
 
                         </Stack>
 
                         <Divider sx={{ mt: "1ch" }} />
-                        <h1>Find a Tutor</h1>
-                        <span>We first need to create an account and obtain some basic information from you before we can find you a suitable tutor 😊!</span>
+                        <h1>Be a Tutor</h1>
+                        <span>We first need to create an account and obtain some basic information from you before we can find you suitable tutees for you 😊!</span>
 
                         <Divider textAlign="left" style={{ borderBottomWidth: "3px", marginTop: "2vh", marginBottom: "1ch" }}>Account Details</Divider>
 
@@ -222,4 +219,4 @@ const Register = (props) => {
     )
 }
 
-export default Register; 
+export default RegisterTutor; 

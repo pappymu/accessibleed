@@ -1,7 +1,8 @@
 
 import './App.css'
-import LandingTwo from './Components/Landing2';
+import LandingOne from './Components/Landing1';
 import Register from './Components/RegisterTutee';
+import RegisterChoice from './Components/RegisterChoice';
 import RegisterTutor from './Components/RegisterTutor';
 import NavBar from './Components/NavBar'
 import { useState, Fragment } from 'react'
@@ -20,9 +21,11 @@ function App() {
           <Fragment>
             <NavBar />
             <div style={{ marginTop: "64px" }}>
-              <LandingTwo />
+              <LandingOne />
             </div>
           </Fragment>} />
+          
+        <Route path="register" element={<RegisterChoice />} />
         <Route path="register/tutee" element={<Register />} />
         <Route path="register/tutor" element={<RegisterTutor />} />
       </Routes>

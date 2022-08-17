@@ -1,6 +1,6 @@
 import { Box, Stack, Fade } from '@mui/material/';
 import { useNavigate } from "react-router-dom";
-import "./Landing2.css";
+import "./Landing1.css";
 
 const LandingOne = (props) => {
 

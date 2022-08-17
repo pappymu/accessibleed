@@ -209,7 +209,7 @@ const RegisterTutor = (props) => {
                                 }
                             />
 
-                            <Button type="submit" variant='contained' sx={{ mt: "3vh" }}>Find A Tutor!</Button>
+                            <Button type="submit" variant='contained' sx={{ mt: "3vh" }}>Register as a tutor!</Button>
                         </form>
                     </ThemeProvider>
 

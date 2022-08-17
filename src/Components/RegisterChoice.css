@@ -1,0 +1,70 @@
+.registerButtonPaperStyle {
+    width: 100%;
+    max-width: 40ch;
+    padding: 2ch;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px !important;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.3) !important;
+    transition: .3s;
+    text-align: center;
+}
+
+.registerChoiceGlass {
+    height: fit-content;
+    color: white;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    padding: 1.5em;
+    background: rgba(10, 10, 10, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(10, 10, 10, 0.7);
+    min-width: 30vw;
+    max-width: 95ch;
+}
+
+.registerButtonPaperStyle:hover {
+    transform: translate(-6px, -6px);
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.5) !important;
+    opacity: .8;
+}
+
+.buttonsInnerDivChoice {
+    display: flex;
+    width: inherit;
+    height: 100%;
+
+    justify-content: center;
+    margin-top: 4vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2vh;
+}
+
+.registerButtonPaperStyle.variant1 {
+    background: linear-gradient(45deg, rgb(25, 118, 210) 0%, rgb(22, 164, 196) 100%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.registerButtonPaperStyle.variant2 {
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.iconStyle {
+    font-size: 2.8ch;
+}
+
+.choiceEdits {
+    margin-bottom: 1ch;
+    font-size: 2.9ch;
+}

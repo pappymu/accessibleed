@@ -13,6 +13,15 @@
     overflow-y: hidden;
 }
 
+
+.Service h1 {
+    height: fit-content;
+    color: rgb(255, 255, 255);
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+
+
 .Wave {
     height: 20vh;
     width: 100vw;
@@ -20,15 +29,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-
-.Title {
-    height: fit-content;
-    color: rgb(255, 255, 255);
-    margin-top: 7vh;
-    margin-bottom: 5vh;
-    backdrop-filter: blur(4.5px);
 }
 
 .Cards {

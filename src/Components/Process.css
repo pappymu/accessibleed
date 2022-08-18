@@ -1,3 +1,24 @@
 .Process {
-    height:100vh
+    height: fit-content;
+    width: 100%;
+    padding-left: 20%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+.Process h1 {
+    height: fit-content;
+    color: rgb(68, 162, 230);
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+
+.Wave2 {
+    height: 20vh;
+    width: 100vw;
+    background-image: url('../assets/wave2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

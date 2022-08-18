@@ -18,10 +18,9 @@ const Service = (props) => {
                 <Stack
                     className='Service'
                     direction='column'>
-                    <Box
-                        className='Title'>
-                        <h1>Why Learny?</h1>
-                    </Box>
+                    <h1>
+                        What We Provide
+                    </h1>
 
                     <Stack 
                         className='Cards' 
@@ -36,7 +35,7 @@ const Service = (props) => {
                     </Stack>
                 
                 </Stack>
-                <div class='Wave'></div>
+                <div class='Wave' />
             </Box>
         </Fade>
     )

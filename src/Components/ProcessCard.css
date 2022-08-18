@@ -1,0 +1,42 @@
+.ProcessCard {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.content {
+    background:#f3f3f3;
+    display: block;
+}
+
+.content h1 {
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.content p {
+    font-size: 16px;
+    padding-left: 5%;
+    margin-top: -15%;
+}
+
+.IconHolder {
+    height: 100%;
+    width:30%;
+    background: rgb(221, 221, 221);
+}
+
+.ProcessIcon {
+    width: 80%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.content {
+    width: 70%;
+}

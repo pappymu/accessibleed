@@ -1,6 +1,8 @@
 
 import './App.css'
 import LandingOne from './Components/Landing1';
+import Service from './Components/Service'
+import Process from './Components/Process'
 import Register from './Components/RegisterTutee';
 import RegisterChoice from './Components/RegisterChoice';
 import RegisterTutor from './Components/RegisterTutor';
@@ -22,6 +24,8 @@ function App() {
             <NavBar />
             <div style={{ marginTop: "64px" }}>
               <LandingOne />
+              <Service />
+              <Process />
             </div>
           </Fragment>} />
           

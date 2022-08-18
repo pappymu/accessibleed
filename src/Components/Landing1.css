@@ -1,34 +1,35 @@
-.Landing2 {
+.Landing1 {
     height: calc(100vh - 64px);
     width: 100vw;
+    position: static;
+}
+
+.bg-text {
+    height: 100%;
+    width: 50%;
+    margin-left: 20%;
+    z-index:1;
     display: flex;
     justify-content: space-around;
     overflow-x: hidden;
     overflow-y: hidden;
-   
 }
 
-.Landing2::before {
-    content: "";
-    left: 0;
-    right: 0;
-    padding-top: 2px;
-    z-index: 0;
+.bg {
     height: 100%;
     width: 100%;
-    position: fixed;
+    z-index:-1;
+    position: absolute;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../assets/mainBG2.jpg");
+    background-position: static;
     background-size: cover;
     background-repeat: no-repeat;
-    
-    filter: blur(2px);
-    -webkit-filter: blur(2px);
 }
-
 
 .glass {
 /* From https://css.glass */
     height: fit-content;
+    width: 800px;
     color: white;
     margin-left: 2em;
     margin-top: 15vh;

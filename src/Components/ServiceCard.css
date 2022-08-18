@@ -1,0 +1,38 @@
+.ServiceCard {
+    height: 400px;
+    width: 300px;
+    background: rgb(25, 118, 210,0.3);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(26, 26, 26, 0.42);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.ServiceCard:hover {
+    transform: translate(-6px, -6px);
+    opacity: .8;
+}
+
+.ServiceCard h1 {
+    font-size: 20px;
+    color:white;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    position: relative;
+}
+
+.icon {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    position: relative;
+    left: 50%;
+    top:10%;
+    transform: translate(-50%,-10%);
+}
+

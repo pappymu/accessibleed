@@ -8,11 +8,11 @@ const LandingOne = (props) => {
 
     return (
         <Fade in={true}>
-            <Box
-                className='Landing2'>
-
-                <Stack
-                    direction="row">
+            
+            <Box className='Landing1'>
+                <div class='bg'> </div>
+                <Box
+                    className='bg-text'>
 
                     <Box className='glass' sx={{ padding: 5 }}>
                         <h1>EMPOWERING YOUTHS THROUGH <br /> FREE EDUCATION</h1>
@@ -28,11 +28,9 @@ const LandingOne = (props) => {
                         </Box>
                     </Box>
 
-                    <Box m='10px' sx={{ width: '50%' }}>
+                    
 
-                    </Box>
-
-                </Stack>
+                </Box>
             </Box>
         </Fade>
     )

@@ -2,7 +2,7 @@
 
 ## Set up SQLite Database
 ```bash
-python manage.py makemigration
+python manage.py makemigrations
 python manage.py migrate
 python manage.py runscript data_load
 ```

@@ -12,4 +12,4 @@ python manage.py runscript data_load
 python manage.py runserver
 ```
 
-Navigate to http://localhost:8000/ to view the matching APi
+Navigate to http://localhost:8000/api to view the matching API

@@ -169,7 +169,7 @@ const NavBar = () => {
                             variant='outlined'
                             sx={{ py: 2, color: "rgb(247, 247, 247)", pr: 3, pt: 1.5, pb: 1.5, pl: 3 }}
                         >
-                            Go to Dashboard
+                            Login
                         </Button>
                     </ThemeProvider>
                     <Button

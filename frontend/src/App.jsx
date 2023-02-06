@@ -6,6 +6,7 @@ import Process from './Components/Process'
 import Register from './Components/RegisterTutee';
 import RegisterChoice from './Components/RegisterChoice';
 import RegisterTutor from './Components/RegisterTutor';
+import LoginTutee from './Components/LoginTutee'
 import NavBar from './Components/NavBar'
 import { useState, Fragment } from 'react'
 import {
@@ -32,6 +33,7 @@ function App() {
         <Route path="register" element={<RegisterChoice />} />
         <Route path="register/tutee" element={<Register />} />
         <Route path="register/tutor" element={<RegisterTutor />} />
+        <Route path="login/tutee" element={<LoginTutee />} />
       </Routes>
 
     </div>
